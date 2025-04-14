@@ -1,0 +1,16 @@
+name: jupyter-cadquery
+channels:
+  - conda-forge
+  - cadquery
+dependencies:
+  - python=3.10
+  - numpy<2
+  - cadquery~=2.2
+  - pip<24.1
+  - pip:
+      - jupyter-cadquery==3.5.2 
+      - cadquery-massembly~=1.0.0
+      - git+https://github.com/gumyr/cq_warehouse.git#egg=cq_warehouse
+      - git+https://github.com/meadiode/cq_gears.git@main
+      - lxml_html_clean
+
